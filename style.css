@@ -1,0 +1,206 @@
+
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: hsl(192, 100%, 9%);
+}
+.logo-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.top-content-block, .buld-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.header h1, .header h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+.content{
+    width: 50%;
+    text-align: center;
+}
+.try-button button{
+    outline: none;
+    border: 1px solid hsl(322, 100%, 66%);
+    background-color: transparent;
+    color: hsl(322, 100%, 66%);
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.try-button button:hover{
+    box-shadow: 0px 0px 8px 2px rgba(255,143,216,0.75);
+}
+.top-button button, .Started-button button{
+    outline: none;
+    border: 1px solid hsl(322, 100%, 66%);
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.top-button button:hover, .Started-button button:hover, .Subscribe-container button:hover{
+    box-shadow: 0px 0px 8px 2px rgba(255,143,216,0.75);
+    background-color: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+}
+.mid-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mid-img-container img{
+    width: 80%;
+}
+.comment-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+.comment-block{
+    display: flex;
+    flex-direction: column;
+}
+.icon img{
+    height: 25px;
+}
+.side-content{
+    display: inline-block;
+    width: max-content;
+    font-size: small;
+    color: gray;
+}
+.comment-block .header h1{
+    font-size: 4em;
+}
+.grow-img-block img, .Flowing-img-block img, .Users-img-block img{
+    height: 400px;
+}
+.Flowing-container, .Users-container, .grow-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 50px;
+}
+.Users-container, .grow-container{
+    background-color: hsl(207, 100%, 98%);
+}
+.grow-content-block, .Flowing-content-block, .Users-content-block{
+    display: flex;
+    flex-direction: column;
+}
+.p-content{
+    text-align: start;
+    font-size: smaller;
+}
+.buld-container{
+    margin: 100px 0px;
+}
+footer{
+    display: flex;
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 50px;
+}
+footer p,footer h1{
+    color: #fff;
+}
+footer p{
+    font-size: smaller;
+}
+.header-container h1,.logo-container h1{
+    font-weight: 700;
+}
+.contact-mobile, .contact-email{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contact-email .icon img, .contact-mobile .icon img{
+    height: 10px;
+}
+.form{
+    display: flex;
+    gap: 10px;
+}
+.Subscribe-container button{
+    outline: none;
+    border: 1px solid hsl(322, 100%, 66%);
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.input input{
+    outline: none;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+.ilu-top-container img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 860px)  {
+    .logo img{
+        height: 20px;
+    }
+    .header h1{
+        text-align: center;
+    }
+    .content{
+        width: 100%;
+    }
+    .comment-container{
+        flex-direction: column;
+    }
+    .Flowing-container, .Users-container, .grow-container{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .grow-img-block img, .Flowing-img-block img, .Users-img-block img {
+        height: 200px;
+    }
+    .Flowing-img-block{
+        order: -1;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .right-container{
+        order: -1;
+    }
+    .top-container{
+        padding: 20px;
+    }
+    .p-content{
+        text-align: center;
+    }
+}
